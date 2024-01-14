@@ -2,5 +2,12 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "files.eol": "\n",
-  "cSpell.words": ["commitlint", "gitmoji", "Mahabub", "pnpx"]
+  "cSpell.words": [
+    "commitlint",
+    "gitmoji",
+    "Mahabub",
+    "nodechecker",
+    "pnpx",
+    "tailwindcss"
+  ]
 }
