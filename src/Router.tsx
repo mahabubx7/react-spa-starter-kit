@@ -1,27 +1,25 @@
-import { Link, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
+import { DashboardLayout, DefaultLayout } from '@layouts'
 import { About, Error, Home } from '@pages'
+import { DashboardIndex } from '@pages/dashboard'
 
 export default function Router() {
   return (
     <>
-      <header>
-        <ul>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/about'>About</Link>
-          </li>
-          <li>
-            <Link to='/error'>Error!</Link>
-          </li>
-        </ul>
-      </header>
-
       <Routes>
-        <Route index path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='*' element={<Error />} />
+        <Route path='/' element={<DefaultLayout />}>
+          <Route index element={<Home />} />
+          <Route path='about' element={<About />} />
+          <Route path='*' element={<Error />} />
+        </Route>
+
+        <Route path='/dashboard' element={<DashboardLayout />}>
+          <Route index element={<DashboardIndex />} />
+          <Route
+            path='*'
+            element={<Error message='Error! from Dashboard Area' />}
+          />
+        </Route>
       </Routes>
     </>
   )

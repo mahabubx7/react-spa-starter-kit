@@ -16,7 +16,7 @@ module.exports = {
       name: '🔧 packages:\tAdded new packages to work next',
     },
     {
-      value: ':bricks: component',
+      value: ':bricks: feat',
       name: '🧱 component:\tAdded new components',
     },
     {
