@@ -2,6 +2,10 @@
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6c881c75-2100-42b2-baa2-aa945a249ec3/deploy-status)](https://app.netlify.com/sites/react18-spa-starter/deploys)
+
+![Live preview](https://react18-spa-starter.netlify.app/)
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
