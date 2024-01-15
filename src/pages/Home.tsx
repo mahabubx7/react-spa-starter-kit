@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from '@assets/react.svg'
 import viteLogo from '/vite.svg'
 
-export function Home() {
+export default function Home() {
   const [count, setCount] = useState(0)
 
   return (
@@ -16,13 +16,15 @@ export function Home() {
         </a>
       </div>
       <h1 className='text-2xl font-bold'>Vite + React (SPA) + TypeScript</h1>
-      <div className='card bg-gray-800 rounded-lg my-2'>
-        <button
-          onClick={() => setCount((count) => count + 1)}
-          className='text-xl font-bold text-white py-1.5 px-4 bg-gray-600'
-        >
-          count is {count}
-        </button>
+      <div className='card bg-gray-800 rounded-lg my-2 flex flex-col gap-2'>
+        <p>
+          <button
+            onClick={() => setCount((count) => count + 1)}
+            className='text-xl font-bold text-white py-1.5 px-4 bg-gray-600'
+          >
+            count is {count}
+          </button>
+        </p>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>

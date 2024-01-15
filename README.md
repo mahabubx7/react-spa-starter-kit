@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# React SPA starter kit
+> SPA: Single Page Application (CSR: Client Side Rendering)
+
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6c881c75-2100-42b2-baa2-aa945a249ec3/deploy-status)](https://app.netlify.com/sites/react18-spa-starter/deploys)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Live preview](https://react18-spa-starter.netlify.app/)
 
-## Expanding the ESLint configuration
+> This project is not finished yet. It is in-development ...
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Core Features
+- [x] React v18 with (updated) `react-router-dom@v6` 
+- [x] Multiple layouts as initial scaffolding (i.e. Default & Dashboard)
+- [x] Error handling HOC as `ErrorBoundary`
+- [x] Code splitting with `Suspense` & `lazy` import for components (i.e. pages)
+- [x] Linters for maintaining code quality (i.e. ESLint, Prettier, Commitlint)
+- [x] TypeScript for type-safe codes
+- [x] Styling `css-in-js` approach with css-module (`.scss as module`) & `TailwindCSS`
+- [ ] Redux integration for global state management with `RTK` & `RTK/query` for API calls 
+- [ ] Storybook integration for the components
+- [ ] Testing setup & initial demos (unit, integration, and e2e)
+- [ ] Testing code coverage setup with reports
+- [ ] Dockerize with `Dockerfile` as example
+- [ ] Optimizing assets on building process
+- [ ] Making sure of lighthouse good score
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Coded with :heart: by Mahabub ([@mahabubx7](https://github.com/mahabubx7))

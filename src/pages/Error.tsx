@@ -2,7 +2,7 @@ type ErrorPageProps = {
   message?: string
 }
 
-export function Error(props: ErrorPageProps) {
+export default function Error(props: ErrorPageProps) {
   const { message } = props
   return (
     <div>
